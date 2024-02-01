@@ -92,9 +92,8 @@
 //     console.log(`${i} x ${j} = ${i * j}`);
 //   }
 // }
-let num = 1;
-let ruselt = 0;
-for (; num <= 100; num++){
-  ruselt = num % 1 === 0 && num / num === 1;
+first: for (let i = 1; i <= 100; i++){
+  for (j = 1; j < i; j++);
+  if(i % j === 0) continue first;
 }
-  console.log(ruselt)
+  console.log(`${i}`)

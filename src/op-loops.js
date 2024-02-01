@@ -92,8 +92,8 @@
 //     console.log(`${i} x ${j} = ${i * j}`);
 //   }
 // }
-first: for (let i = 1; i <= 100; i++){
-  for (j = 1; j < i; j++);
+first: for (let i = 2; i <= 100; i++){
+  for (j = 2; j < i; j++);
   if(i % j === 0) continue first;
 }
   console.log(`${i}`)

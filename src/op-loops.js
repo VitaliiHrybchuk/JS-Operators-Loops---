@@ -85,10 +85,16 @@
 // console.log(`${i * 2}`);
 // }
 
-outer: for (let i = 1; i < 10; i++) {
-  inner: for (let j = 1; j < 10; j++) {
-  if (i === 5) continue outer;
-  if (j === 5) continue;
-    console.log(`${i} x ${j} = ${i * j}`);
-  }
+// outer: for (let i = 1; i < 10; i++) {
+//   inner: for (let j = 1; j < 10; j++) {
+//   if (i === 5) continue outer;
+//   if (j === 5) continue;
+//     console.log(`${i} x ${j} = ${i * j}`);
+//   }
+// }
+let num = 1;
+let ruselt = 0;
+for (; num <= 100; num++){
+  ruselt = num % 1 === 0 && num / num === 1;
 }
+  console.log(ruselt)
